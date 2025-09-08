@@ -15,7 +15,8 @@ In UserRepository, declare the following methods that help to find all user and 
 - `data.sql` contains insert statements for dummy users. Find where this file is and explain what it is used for? 
 
 ```
-Your answer
+Spring Boot automatically executes data.sql at application startup to pre-populate the H2 database with sample (dummy) records.
+This ensures that when tests run (or the app starts), there are already some users in the database to query and test against.
 ```
 
 ## User Reservice - Complete the code
